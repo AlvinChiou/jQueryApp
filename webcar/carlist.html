@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+	<title>nested listview demo</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="Big5">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.js"></script>
+</head> 
+<body>
+	<div data-role="page" id="mainpage">
+		<div data-role="header">
+			<h3>Car list</h3>
+		</div>
+		<div data-role="content">
+			<ul data-role="listview" data-inset="true" data-filter="true">
+				<li><a data-transition='slide' href="#page1">Nissan</a></li>
+				<li><a data-transition='slide' href="#page3">Audi</a></li>
+				<li><a data-transition='slide' href="#">BMW</a></li>
+				<li><a data-transition='slide' href="#page2">Toyota</a></li>
+				<li><a data-transition='slide' href="#">Bens</a></li>
+			</ul>
+		</div>
+		<div data-role="footer" data-id="foot" data-position="fixed">
+            <h3>&copy; 2013 PAN</h3>
+        </div>
+	</div><!-- /page -->
+	
+	<div data-role="page" id="page1">
+		<div data-role="header">
+			<a data-rel="back" data-transition="slide" data-direction="reverse" 
+				data-icon="arrow-l">back</a>
+			<h3>Nissan</h3>
+		</div>
+		<div data-role="content">
+			<ul data-role="listview" data-inset="true" data-filter="true">
+				<li><a href="#">March</a></li>
+				<li><a href="#">Tiida</a></li>
+				<li><a href="#">Verita</a></li>
+				<li><a href="#">gtr</a></li>
+			</ul>
+		</div>
+		<div data-role="footer" data-id="foot" data-position="fixed">
+            <h3>&copy; 2013 PAN</h3>
+        </div>
+	</div><!-- /page -->
+	
+	<div data-role="page" id="page2">
+		<div data-role="header">
+			<a data-rel="back" data-transition="slide" data-direction="reverse" data-icon="arrow-l">back</a>
+			<h3>Toyota</h3>
+		</div>
+		<div data-role="content">
+			<ol data-role="listview" data-inset="true" data-filter="true">
+				<li><a href="#">Wish</a></li>
+				<li><a href="#">Prius</a></li>
+				<li><a href="#">Altis</a></li>
+			</ol>
+		</div>
+		<div data-role="footer" data-id="foot" data-position="fixed">
+            <h3>&copy; 2013 PAN</h3>
+        </div>
+	</div><!-- /page -->
+
+    <div data-role="page" id="page3">
+        <div data-role="header">
+            <a data-rel="back" data-transition="slide" data-direction="reverse" data-icon="arrow-l">back</a>
+            <h3>Audi</h3>
+        </div>
+        <div data-role="content">
+            <ol data-role="listview" data-inset="true" data-filter="true">
+                <li><a href="#">A1</a></li>
+                <li><a href="#">A3</a></li>
+                <li><a href="#">A4</a></li>
+                <li><a href="#">A5</a></li>
+                <li><a href="#">A6</a></li>
+                <li><a href="#">A7</a></li>
+                <li><a href="#">A8</a></li>
+                <li><a href="#">Q3</a></li>
+                <li><a href="#">Q5</a></li>
+                <li><a href="#">Q7</a></li>
+                <li><a href="#">TT</a></li>
+                <li><a href="#R8">R8</a></li>
+            </ol>
+        </div>
+
+    </div><!-- /page -->
+    <div data-role="page" id="R8">
+        <div data-role="header">
+            <a data-rel="back" data-transition="slide" data-direction="reverse"
+               data-icon="arrow-l">back</a>
+            <h3>R8</h3>
+        </div>
+        <div data-role="content">
+            <img src="R8.jpg">
+            <p>台灣奧迪汽車正式導入新Audi R8 Coupe / R8 Spyder高性能旗艦超跑雙雄
+                自2007年首度問世以來，Audi R8就以四環品牌頂級旗艦超跑之姿，完整承繼了Audi過往傲人輝煌的賽車歷史與精神，
+                不僅在全球車壇上開創了嶄新的超跑新頁，更締造了專屬於四環品牌新世代極致工藝的光榮印記！而Audi R8的誕生，
+                不只廣受許多嚮往前衛科技和頂尖日耳曼造車理念的超跑買家所青睞，
+                為Audi品牌在頂級高性能跑車市場上奠定紮實的銷售基礎，透過超人氣的好萊塢賣座電影「鋼鐵人系列」推波助瀾之下，
+                更加確立了Audi R8無可取代的先驅科技形象，以及四環品牌引領車壇潮流的地位，
+                同時進一步彰顯Audi長期以來所具備的卓越超跑製造能力與堅強研發實力，
+                也讓Audi R8成為全球無數性能車迷們心目中家喻戶曉的終極超跑！</p>
+        </div>
+        <div data-role="footer" data-id="foot" data-position="fixed">
+            <h3>&copy; 2013 PAN</h3>
+        </div>
+    </div><!-- /page -->
+    <div data-role="footer" data-id="foot" data-position="fixed">
+        <h3>&copy; 2013 PAN</h3>
+    </div>
+</body>
+</html>
